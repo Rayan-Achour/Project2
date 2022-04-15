@@ -13,7 +13,6 @@ export default function TitleSegment({
     changeCurrentSVG,
 }) {
     // Contains the structure for the top section of the project
-
     // Returns a JSX component for the title segment
     return (
         <>
