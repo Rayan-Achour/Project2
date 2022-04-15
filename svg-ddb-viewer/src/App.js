@@ -41,13 +41,11 @@ export default function App() {
     // Default list of SVGs
     "Ethereum Logo",
 ]);
-
 // Callback function to update the SVG from the selector
 const changeCurrentSVG = (selectionTitle) => {
     // For now, do nothing of importance
     console.log(`Selected ${selectionTitle}`);
 };
-
  // Callback function to update the SVG within a child component
  const updateSVG = (newSVG) => {
     // Update the GUN database with the new SVG
@@ -56,7 +54,6 @@ const changeCurrentSVG = (selectionTitle) => {
     // Update the SVG name list
     setSVGNameList(svgNameList.concat(newSVG.title));
 };
-
 // Returns a JSX component for the overall application
 return (
     <div

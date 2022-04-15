@@ -8,9 +8,7 @@ const isSVG = require("is-svg");
 // SVG upload form container
 export default function SVGUploadForm({ updateSVG }) {
     // Contains code for SVG upload form
-
     const [form] = Form.useForm(); // Input form for SVG upload
-
     // Handle upload form
     const onSubmit = (formData) => {
         // Construct the new SVG from the form data
@@ -32,7 +30,6 @@ export default function SVGUploadForm({ updateSVG }) {
         // Clear the form data boxes
         form.resetFields();
     };
-
     // If the SVG is not valid, alert the user
     const onFinishFailed = (errorInfo) => {
         console.log("Failed SVG input:", errorInfo);
